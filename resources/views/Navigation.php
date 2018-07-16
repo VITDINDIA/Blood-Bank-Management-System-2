@@ -1,7 +1,13 @@
+<style>
+.navbar-custom {
+    color:#FFFFFF;
+    background-color:#990000;
+}
+</style>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"> BLOOD BANK SYSTEM </a>
+<nav class="navbar navbar-expand-lg  fixed-top navbar-custom">
+      <div class="container" >
+        <a class="navbar-brand text-white "  href="#"> BLOOD BANK SYSTEM </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,21 +74,21 @@
         ?>
           <ul class="navbar-nav ml-auto">
             <li <?php  if(@$_GET['page']=="HOME" or !isset($_GET['page'])   ) { ?> class="nav-item active" <?php } else { ?>  class="nav-item" <?php } ?> >
-              <a class="nav-link" href="index.php?page=HOME"><i class="glyphicon glyphicon-home"></i> HOME
+              <a class="nav-link text-white" href="index.php?page=HOME"><i class="glyphicon glyphicon-home"></i> HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li <?php if(@$_GET['page']=="ABOUT") { ?> class="nav-item active" <?php } else { ?>  class="nav-item" <?php } ?> class="nav-item">
-              <a class="nav-link" href="index.php?page=ABOUT"><i class="glyphicon glyphicon-book"></i> ABOUT</a>
+              <a class="nav-link text-white" href="index.php?page=ABOUT"><i class="glyphicon glyphicon-book"></i> ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i> HOSPITAL</a>
+              <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i> HOSPITAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal1" ><i class="glyphicon glyphicon-user"></i> RECEIVER</a>
+              <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#myModal1" ><i class="glyphicon glyphicon-user"></i> RECEIVER</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-log-in"></i>  LOGIN</a>
+              <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-log-in"></i>  LOGIN</a>
             </li>
           </ul>
          <?php
