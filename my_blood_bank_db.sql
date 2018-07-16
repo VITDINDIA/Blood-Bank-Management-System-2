@@ -258,6 +258,35 @@ ALTER TABLE `my_receiver_request`
   ADD CONSTRAINT `my_receiver_request_ibfk_1` FOREIGN KEY (`receiverid`) REFERENCES `my_receiver` (`myemail`);
 COMMIT;
 
+
+-- Table structure for table `view_services`
+--
+
+
+
+CREATE TABLE IF NOT EXISTS `view_services` (
+  `id` int(13) NOT NULL AUTO_INCREMENT,
+  `services` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `view_services`
+--
+
+INSERT INTO `view_services` (`id`, `services`) VALUES
+(1, 'Search Hospitals for Blood Banks.'),
+(2, 'Find Out The Availability of Blood.'),
+(3, 'Generate Request for The Blood.'),
+(4, 'Navigate Hospitals with The Integrated Google Maps.'),
+(5, ' contact :- 0121-3258111');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
