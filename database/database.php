@@ -1,7 +1,7 @@
 <?php
-
 class database
 {
+public $conn;
 public $connection;   
 function __construct()
     {
@@ -31,8 +31,17 @@ return  mysqli_num_rows($result);
 public function escape_string($string)
                 {   
 return $this->connection->real_escape_string($string);  
-                }                                 
+                }      
+
+public function get_all_services()
+        {	
+return $this->query("SELECT * FROM `view_services`");
+        }                                 
     
+public function get_all_services_location()
+        {	
+return $this->query("SELECT * FROM `view_services_location`");
+        }                                 
 }
 $database = new database();
 ?>
